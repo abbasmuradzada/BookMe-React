@@ -2,7 +2,6 @@ import React, {FC} from 'react';
 import './style.scss';
 import logo from '../../Assets/Images/bookme.png';
 import callImg from '../../Assets/Images/call.png';
-import Box from '@material-ui/core';
 import { useHistory, useLocation } from "react-router-dom";
 
 

@@ -1,0 +1,30 @@
+@import '../../../../Assets/Style/variables', '../../../../Assets/Style/common';
+
+.related-post{
+    &:first-child{
+        @media only screen and (max-width: 1020px) {
+            margin-bottom: 20px;
+        }        
+    }
+    img{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    &_heading{
+        color: #3c3634;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &_desc{
+        color: $main-black;
+        font-family: "Playfair Display";
+        font-size: 14px;
+        font-weight: 400;
+        >span{
+            color: #9f8447;
+        }
+    }
+}
