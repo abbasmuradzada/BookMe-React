@@ -1,0 +1,40 @@
+@import '../../../../Assets/Style/variables', '../../../../Assets/Style/common';
+
+.fact-card{
+    position: relative;
+    @media only screen and (max-width: 980px) {
+        width: 100% !important;
+        margin-bottom: 60px;
+    }
+    width: calc((100% - 60px)/3);
+    height: 283px;
+    background-color: #fff;
+    padding: 80px 30px 0 30px;
+    box-sizing: border-box;
+    .fact-icon-bg{
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        background-color: $main-brown;
+        position: absolute;
+        left: 30px;
+        top: -42.5px;
+    }
+    .fact-header{
+        color: $main-black;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+    .fact-desc{
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 400;
+        font-family: "Playfair Display";
+        color: #858585;
+    }
+}

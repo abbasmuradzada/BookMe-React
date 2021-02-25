@@ -1,7 +1,9 @@
 import React, {FC} from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import { BrowserRouter as Router, Switch, Route, Redirect, useHistory  } from "react-router-dom";
+import Services from '../Home/Services';
+import Facts from '../Home/Facts';
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 
 const Layout:FC = () => {
@@ -15,7 +17,8 @@ const Layout:FC = () => {
                     <Redirect to="/home"/>
                 </Route>  
                 <Route path = "/home">
-                    <div className='container'>Home Page</div>
+                    <Services/>
+                    <Facts/>
                 </Route>
                 <Route path = "/blog">
                     <div className='container'>Blog Page</div>

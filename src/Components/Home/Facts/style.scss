@@ -1,0 +1,26 @@
+@import '../../../Assets/Style/variables', '../../../Assets/Style/common';
+
+#facts{
+    background-color: #e5e5e5;
+    padding: 150px 0;
+    .sec-title{
+        margin-bottom: 18px;
+    }
+    .sec-heading{
+        margin-bottom: 36px;
+        @media only screen and (max-width: 980px) {
+            text-align: center;
+        }
+    }
+    .sec-desc{
+        width: 812px;
+        text-align: center;
+        margin-bottom: 120px;
+        @media only screen and (max-width: 980px) {
+            width: 80vw !important;
+        }
+    }
+    #fact-list{
+        width: 100%;
+    }
+}
