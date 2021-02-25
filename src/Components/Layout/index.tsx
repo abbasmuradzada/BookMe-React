@@ -3,6 +3,8 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Services from '../Home/Services';
 import Facts from '../Home/Facts';
+import AboutMe from '../Home/AboutMe';
+import Clients from '../Home/Clients';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 
@@ -19,6 +21,8 @@ const Layout:FC = () => {
                 <Route path = "/home">
                     <Services/>
                     <Facts/>
+                    <AboutMe/>
+                    <Clients/>
                 </Route>
                 <Route path = "/blog">
                     <div className='container'>Blog Page</div>
