@@ -3,6 +3,7 @@ import Path from './Path'
 import Quote from './Quote'
 import BlogPost from './BlogPost'
 import Comment from './Comment'
+import BlogForm from './BlogForm'
 import Sidebar from './Sidebar'
 import {Box} from '@material-ui/core';
 import {Divider, SideBarTitle} from './Common'
@@ -26,6 +27,7 @@ const Blog:FC = () => {
                             <Comment owner='Abbas Muradzada' date='AUG 12, 2015' thanNow='1 HOUR AGO' />
                             <Comment owner='Samir Ahmadov' date='AUG 12, 2015' thanNow='1 HOUR AGO' />
                             <SideBarTitle title='leave a comment' />
+                            <BlogForm/>
                         </Col>
                         <Col md='4'>
                             <Sidebar/>

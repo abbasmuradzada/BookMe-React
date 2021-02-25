@@ -1,0 +1,65 @@
+@import '../../../Assets/Style/variables', '../../../Assets/Style/common';
+
+#add-comment{
+    margin-bottom: 100px;
+    form{
+        .comment-input{
+            width: 100%;
+            label{
+                @media only screen and (max-width: 1190px) {
+                    width: 90vw !important;
+                }
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                color: $main-black;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 26px;
+                >input{
+                    @media only screen and (max-width: 1190px) {
+                        width: 100%;
+                        transform: none;
+                    }    
+                    border: 1px solid #d2cfc9;
+                    background-color: #fafaf6;
+                    outline: none;
+                    width: 450px;
+                    transform: translateX(-190px);
+                }
+                >textarea{
+                    @media only screen and (max-width: 1190px) {
+                        width: 100%;
+                        transform: none;
+                    }    
+                    border: 1px solid #d2cfc9;
+                    background-color: #fafaf6;
+                    outline: none;
+                    width: 600px;
+                    height: 200px;
+                    transform: translateX(-40px);
+                    margin-bottom: 38px;
+                }
+        
+            }
+        }
+        .comment-submit{
+            @media only screen and (max-width: 1190px) {
+                width: 100%;
+                margin-left: 0;
+            }    
+            border: none;
+            background-color: $main-brown;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;            
+            padding: 11px 22px;
+            margin-left: 75px;
+        }
+    }
+}
