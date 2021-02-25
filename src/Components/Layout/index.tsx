@@ -1,12 +1,15 @@
 import React, {FC} from 'react';
 import Header from '../Header';
-import Footer from '../Footer';
+import About from '../Home/About';
+import Slider from '../Home/Slider';
 import Services from '../Home/Services';
 import News from '../Home/News';
 import Facts from '../Home/Facts';
 import AboutMe from '../Home/AboutMe';
 import Clients from '../Home/Clients';
 import Book from '../Home/Book';
+import Footer from '../Footer';
+import GoToTop from '../GoToTop';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 
@@ -20,6 +23,8 @@ const Layout:FC = () => {
                     <Redirect to="/home"/>
                 </Route>  
                 <Route path = "/home">
+                    <Slider/>
+                    <About/>
                     <Services/>
                     <News/>
                     <Facts/>
@@ -32,6 +37,9 @@ const Layout:FC = () => {
                 </Route>
             </Switch>
             <Footer/>
+            abbas
+            <GoToTop/>
+            abbas
         </Router>
     </div>
   );
