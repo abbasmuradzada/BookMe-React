@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import Header from '../Header';
 import Home from '../Home'
+import Blog from '../Blog'
 import Footer from '../Footer';
 import GoToTop from '../GoToTop';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
@@ -19,7 +20,7 @@ const Layout:FC = () => {
                     <Home/>         
                 </Route>
                 <Route path = "/blog">
-                    <div className='container'>Blog Page</div>
+                    <Blog/>
                 </Route>
             </Switch>
             <Footer/>

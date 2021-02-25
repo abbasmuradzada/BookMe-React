@@ -3,11 +3,17 @@ import './style.scss';
 import logo from '../../Assets/Images/bookme.png';
 import callImg from '../../Assets/Images/call.png';
 import Box from '@material-ui/core';
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 
 
 const Header:FC = () => {
     const history = useHistory();
+    const location = useLocation();
+    const goToHome = () => {
+        if (location.pathname !== '/home') {
+            history.push('/home')
+        }
+    }
     const goToBlog = () => {
         history.push('/blog')
     }
@@ -34,7 +40,7 @@ const Header:FC = () => {
                 </div>
                 <nav>
                     <ul className="d-flex">
-                        <li className="active nav-home"><a>home</a></li>
+                        <li onClick={goToHome} className="active nav-home"><a>home</a></li>
                         <li className="nav-about"><a>about me</a></li>
                         <li className="nav-services"><a>services</a></li>
                         <li className="nav-whyme"><a>why me</a></li>
