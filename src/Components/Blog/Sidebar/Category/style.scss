@@ -1,0 +1,21 @@
+@import '../../../../Assets/Style/variables', '../../../../Assets/Style/common';
+
+.categories{
+    .blog-divider{
+        margin: 0 !important;
+    }
+    .category{
+        color: $main-black;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 70px;
+        text-transform: uppercase;
+        >span{
+            color: $main-brown;
+        }
+        >i{
+            font-size: 15px;
+        }
+    }
+}

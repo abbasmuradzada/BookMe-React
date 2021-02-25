@@ -1,0 +1,32 @@
+@import '../../../../Assets/Style/variables', '../../../../Assets/Style/common';
+
+.recent-posts{
+    width: 100%;
+    .recent-post{
+        >img{
+            margin-right: 20px;
+        }
+        &:first-child{
+            margin-bottom: 30px;
+        }
+        &_details{
+            &_heading{
+                color: $main-black;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            &_desc{
+                color: $main-black;
+                font-family: Lora;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 28px;
+                text-transform: uppercase;
+            }
+        }
+ 
+    }
+}

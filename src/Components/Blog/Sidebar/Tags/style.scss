@@ -1,0 +1,23 @@
+@import '../../../../Assets/Style/variables', '../../../../Assets/Style/common';
+
+.tags{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    >.tag{
+        border: 1px solid #9f8447; 
+        color: $main-black;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 11px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        &.active{
+            background-color: $main-brown;
+            color: #fff;
+        }
+    }
+}

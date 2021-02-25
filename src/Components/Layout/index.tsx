@@ -21,6 +21,7 @@ const Layout:FC = () => {
                 </Route>
                 <Route path = "/blog">
                     <Blog/>
+                    {/* blog */}
                 </Route>
             </Switch>
             <Footer/>

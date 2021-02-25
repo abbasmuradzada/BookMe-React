@@ -1,0 +1,17 @@
+@import '../../../Assets/Style/variables', '../../../Assets/Style/common';
+
+#sidebar{
+    padding: 80px 0;
+    .archives{
+        >select{
+             width: 135px;
+             height: 34px;
+             border: 1px solid #9f8447;
+             color: $main-black;
+             font-family: Montserrat;
+             font-size: 12px;
+             font-weight: 400;
+             text-transform: uppercase;
+        }
+    }
+}

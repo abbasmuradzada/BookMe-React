@@ -40,12 +40,18 @@ const Header:FC = () => {
                 </div>
                 <nav>
                     <ul className="d-flex">
-                        <li onClick={goToHome} className="active nav-home"><a>home</a></li>
+                        <li onClick={goToHome} 
+                            className={location.pathname == '/home' ? "active nav-home" : "nav-home"}>
+                                <a>home</a>
+                        </li>
                         <li className="nav-about"><a>about me</a></li>
                         <li className="nav-services"><a>services</a></li>
                         <li className="nav-whyme"><a>why me</a></li>
                         <li className="nav-features"><a>features</a></li>
-                        <li onClick={goToBlog} className="nav-home"><a href="">blog</a></li>
+                        <li onClick={goToBlog} 
+                            className={location.pathname == '/blog' ? "active nav-home" : "nav-home"}>
+                                <a href="">blog</a>
+                        </li>
                         <li className="nav-contact"><a>contact</a></li>
                     </ul>
                 </nav>
